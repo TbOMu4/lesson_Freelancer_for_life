@@ -1,0 +1,166 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/Larsseit-Regular.woff2") format("woff2"), url("../fonts/Larsseit-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/Larsseit-Medium.woff2") format("woff2"), url("../fonts/Larsseit-Medium.woff") format("woff");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/Larsseit-Bold.woff2") format("woff2"), url("../fonts/Larsseit-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+    color: blue;
+}
+
+body {
+    font-family: Roboto;
+}
+
+a {
+    font-family: Larsseit;
+    font-weight: 400;
+    color: tomato;
+}
+
+.header-link {
+    font-weight: 700;
+    color: brown;
+}
+
+.section01 * {
+    font-family: Larsseit;
+    font-weight: 500;
+}
+
+.section01-title {
+    font-weight: 700;
+    color: slateblue;
+}
+
+.section01-subtitle {
+    color: rosybrown;
+}
+
+.section02 p {
+    font-family: Roboto;
+    font-weight: 700;
+    color: darkblue;
+}
+
+.section02-title {
+    font-family: "Lato";
+    font-weight: 900;
+    color: indianred;
+}
+
+.section02-item {
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.section02-item span {
+    font-weight: 900;
+    color: violet;
+}
+
+.section03-title {
+    font-weight: 900;
+    color: silver;
+}
+
+.section03-text {
+    font-weight: 700;
+    color: purple;
+}
+
+.section03-item {
+    font-weight: 500;
+    color: grey;
+}
+
+.section04 * {
+    font-weight: 900;
+    color: fuchsia;
+}
+
+.section04-list>li {
+    color: red;
+
+}
+
+.section04-item span {
+    font-family: "Larsseit";
+    font-weight: 700;
+    color: teal;
+}
+
+.section05 {
+    font-family: "Larsseit";
+}
+
+.section05-title {
+    font-weight: 700;
+    color: slateblue;
+}
+
+.section05-text {
+    font-weight: 500;
+    color: pink;
+}
+
+.section05-item {
+    color: peru;
+}
+
+.section05-item span {
+    font-family: "Lato";
+    font-weight: 900;
+    color: olive;
+}
+
+.footer-link {
+    font-weight: 900;
+    color: black;
+}
