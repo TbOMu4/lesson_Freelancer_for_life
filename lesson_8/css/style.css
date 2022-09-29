@@ -1,0 +1,323 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #424551;
+}
+
+img {
+    max-width: 100%;
+}
+
+[class*="-container"] {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.main-about-course {
+    margin-bottom: 118px;
+}
+
+.about-course-title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    color: #1E212C;
+    margin-bottom: 40px;
+}
+
+.about-course-box-text {
+    margin-bottom: 48px;
+}
+
+.box-text {
+    line-height: 1.6;
+}
+
+.about-course-items-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: #1E212C;
+}
+
+.about-course-item {
+    min-height: 26px;
+    line-height: 1.6;
+    background: url('../img/check.svg') 0 6px no-repeat;
+    padding-left: 32px;
+}
+
+.about-course-item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+/* .about-course-item::before {
+    content: "";
+    background: url('../img/check.svg') 0 0 no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 32px;
+} */
+.main-cody-fisher {
+    margin-bottom: 100px;
+}
+
+.cody-fisher-desc {
+    margin-bottom: 32px;
+}
+
+.desc-subtitle {
+    font-weight: 700;
+    line-height: 1.5;
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+
+.desc-title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
+    color: #1E212C;
+    margin-bottom: 16px;
+}
+
+.cody-fisher-items {
+    margin-bottom: 35px;
+}
+
+.cody-fisher-item {
+    padding-left: 24px;
+    font-weight: 700;
+    line-height: 1.6;
+    min-height: 26px;
+}
+
+.cody-fisher-item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.cody-fisher-item:nth-child(1) {
+    background: url('../img/star.svg') 0 5px no-repeat;
+}
+
+.cody-fisher-item:nth-child(2) {
+    background: url('../img/play.svg') 0 5px no-repeat;
+}
+
+.cody-fisher-item:nth-child(3) {
+    background: url('../img/person.svg') 0 5px no-repeat;
+}
+
+.cody-fisher-box-text {
+    line-height: 1.6;
+}
+
+/* ====================================================================================== */
+
+.article-header {
+    text-align: center;
+    margin-bottom: 170px;
+}
+
+.article-header-container {
+    background-color: peru;
+}
+
+.article-header-menu {
+    display: inline-block;
+}
+
+.article-header-item {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    padding: 16px;
+}
+
+.article-header-item:hover,
+.article-header-item-submenu:hover {
+    background-color: rgb(177, 102, 27);
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.article-header-item:not(:last-child) {
+    margin-right: 80px;
+}
+
+.article-header-link:visited {
+    color: blue;
+}
+
+.article-header-link:focus,
+.article-header-link-submenu:focus {
+    outline: 1px solid violet;
+    color: steelblue;
+}
+
+.article-header-link:active,
+.article-header-link-submenu:active {
+    color: red;
+}
+
+.article-header-link,
+.article-header-link-submenu {
+    text-transform: uppercase;
+}
+
+/* ====================================================================================== */
+.article-header-list-submenu {
+    position: absolute;
+    left: 0;
+    display: none;
+    margin-top: 16px;
+}
+
+.article-header-list .article-header-item:hover .article-header-list-submenu {
+    display: block;
+}
+
+.article-header-item-submenu {
+    padding: 10px 15px;
+    background-color: peru;
+}
+
+.article-header-text {
+    display: none;
+    padding: 15px;
+}
+
+.article-header-text:target {
+    display: block;
+}
+
+
+.main-game {
+    width: 100%;
+    min-height: 999px;
+    background-color: royalblue;
+    margin-bottom: 100px;
+}
+
+.game-item {
+    visibility: hidden;
+}
+
+.game-item:nth-child(1) {
+    max-width: 100px;
+    min-height: 100px;
+    background-color: green;
+    font-weight: 900;
+    font-size: 40px;
+    color: peru;
+}
+
+.main-game:hover .game-item:nth-child(1) {
+    visibility: visible;
+}
+
+/* .game-item:hover,
+.game-item:hover+* {
+    visibility: visible;
+} */
+
+[class*='game-']:hover,
+[class*='game-']:hover+* {
+    visibility: visible;
+
+}
+
+.game-item-1:hover .game-item-2 {
+    visibility: visible;
+}
+
+.game-item:nth-child(2) {
+    max-width: 300px;
+    min-height: 20px;
+    background-color: gray;
+}
+
+.game-item:nth-child(3) {
+    max-width: 30px;
+    min-height: 80px;
+    background-color: gold;
+    margin-left: 270px;
+}
+
+.game-item:nth-child(4) {
+    max-width: 200px;
+    min-height: 50px;
+    background-color: gray;
+    margin-left: 270px;
+}
+
+.game-item:nth-child(5) {
+    max-width: 400px;
+    min-height: 20px;
+    background-color: gold;
+    margin-left: 430px;
+}
+
+.game-item:nth-child(6) {
+    max-width: 50px;
+    min-height: 140px;
+    background-color: greenyellow;
+    margin-left: 780px;
+}
+
+.game-item:nth-child(7) {
+    max-width: 250px;
+    min-height: 40px;
+    background-color: goldenrod;
+    margin-left: 780px;
+}
+
+.game-item:nth-child(8) {
+    max-width: 20px;
+    min-height: 140px;
+    background-color: green;
+    margin-left: 1010px;
+}
+
+.game-item:nth-child(9) {
+    max-width: 650px;
+    min-height: 40px;
+    background-color: gainsboro;
+    margin-left: 380px;
+}
+
+.game-item:nth-child(10) {
+    max-width: 20px;
+    min-height: 140px;
+    background-color: hotpink;
+    margin-left: 380px;
+}
+
+.game-item:nth-child(11) {
+    max-width: 120px;
+    min-height: 40px;
+    background-color: tomato;
+    margin-left: 380px;
+}
+
+.game-item:nth-child(12) {
+    max-width: 20px;
+    min-height: 140px;
+    background-color: tomato;
+    margin-left: 480px;
+}
+
+.game-item:nth-child(13) {
+    max-width: 100px;
+    min-height: 100px;
+    background-color: forestgreen;
+    margin-left: 480px;
+}
