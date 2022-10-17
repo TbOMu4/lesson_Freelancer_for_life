@@ -1,0 +1,243 @@
+@import url(reset.css);
+
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+}
+
+.auto {
+    position: relative;
+    min-height: 969px;
+    background: #0e0e0e;
+}
+
+.auto::before {
+    content: "";
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 4%, rgba(160, 160, 160, 1) 51%, rgba(255, 255, 255, 1) 82%);
+    border-radius: 50%;
+    box-shadow: 4px 24px #000;
+}
+
+.auto__container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.shop-assembly {
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+}
+
+.shop-assembly__body {
+    position: relative;
+    width: 800px;
+    height: 200px;
+    background-color: #ff6200;
+    z-index: 1;
+    top: 10%;
+    left: 12%;
+    border-radius: 69% 31% 13% 25% / 73% 63% 20% 15%;
+    box-shadow: -1px 2.5px 9.5px 4px #000000;
+}
+
+.shop-assembly__body::before {
+    content: "";
+    width: 800px;
+    height: 75px;
+    position: absolute;
+    top: 99%;
+    left: 0;
+    background: hsl(0, 0%, 5%, 0.5);
+    border-radius: 10%/50%;
+    z-index: 2;
+}
+
+.shop-assembly__threshold {
+    position: absolute;
+    background: linear-gradient(138deg, #18181f 5%, #0c0f0f 100%);
+    width: 650px;
+    height: 15px;
+    /* bottom: 0; */
+    left: 24%;
+    border-radius: 650px 0px 241px 604px / 6px 75px 75px 75px;
+    z-index: 3;
+}
+
+.shop-assembly__door {
+    position: absolute;
+    width: 275px;
+    height: 115px;
+    background: linear-gradient(138deg, #f55d04 50%, #e0590f 100%);
+    left: 48%;
+    top: 40%;
+    z-index: 4;
+    border-radius: 0px 0px 167px 44px / 68px 75px 102px 4px;
+    box-shadow: -3px 5px 1px #1e212c;
+}
+
+.shop-assembly__door::before {
+    content: "";
+    width: 185px;
+    height: 15px;
+    background: linear-gradient(138deg, #ff6200 100%, hsl(21, 94%, 49%) 100%);
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    border-radius: 178px 16px 174px 88px / 75px 45px 75px 5px;
+    box-shadow: 9px 5px 1px #1e212c;
+}
+
+.shop-assembly__window {
+    position: absolute;
+    width: 280px;
+    height: 70px;
+    background: hsl(180, 11%, 5%, 0.8);
+    top: 7%;
+    left: 48%;
+    z-index: 5;
+    border-radius: 291px 218px 322px 219px / 75px 75px 75px 0px;
+    box-shadow: inset 6px 2px 1px rgb(134, 97, 97, 0.8);
+}
+
+.shop-assembly__window::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 58px;
+    background: #0c0f0f;
+    top: 5%;
+    left: 80%;
+    border-radius: 0px 150px 150px 0px / 0px 75px 75px 0px;
+}
+
+.shop-assembly__front-window {
+    position: absolute;
+    width: 42px;
+    height: 66px;
+    background: hsl(180, 11%, 5%, 0.8);
+    top: 12%;
+    left: 40%;
+    z-index: 6;
+    transform: skew(-51deg);
+    box-shadow: -2px 2px 1px rgba(43, 38, 38, 0.8);
+}
+
+.shop-assembly__rear-view-mirror {
+    position: absolute;
+    width: 33px;
+    height: 24px;
+    background: orangered;
+    border-radius: 0px 150px 150px 0px / 0px 75px 75px 0px;
+    box-shadow: 3px 4px 1px rgba(43, 38, 38, 0.8);
+    top: 30%;
+    left: 45%;
+    z-index: 7;
+}
+
+.shop-assembly__rear-view-mirror::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    width: 26px;
+    height: 8px;
+    background: rgb(0, 0, 0);
+    border-radius: 0px 150px 150px 0px / 0px 75px 75px 0px;
+}
+
+.shop-assembly__bumper {
+    position: absolute;
+    top: 1%;
+    left: 98%;
+    background: #e0590f;
+    width: 92px;
+    height: 16px;
+    z-index: 7;
+}
+
+.shop-assembly__bumper::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 52%;
+    width: 10px;
+    height: 45px;
+    background: #e0590f;
+}
+
+.shop-assembly__wheel {
+    position: absolute;
+    top: 62%;
+    left: 28%;
+    width: 120px;
+    height: 90px;
+    background: #0c0f0f;
+    z-index: 8;
+    border-radius: 50% 50% 0 0;
+}
+
+.shop-assembly__tire {
+    position: absolute;
+    z-index: 9;
+    top: 20%;
+    left: 10%;
+    width: 100px;
+    height: 90px;
+    background: #1e212c;
+    border-radius: 50%;
+}
+
+.shop-assembly__disc {
+    position: absolute;
+    z-index: 10;
+    top: 35%;
+    left: 24%;
+    width: 68px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.shop-assembly__disc::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.shop-assembly__wheel--right {
+    left: 85%;
+}
+
+.shop-assembly__headlights {
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 15%;
+    width: 68px;
+    height: 60px;
+    background: linear-gradient(138deg, rgba(0, 0, 0, 0.83) 100%, rgba(0, 0, 0, 0.8) 0%);
+    border-radius: 100% 0 0 50%;
+}
+
+.shop-assembly__headlights::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    width: 40px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50% 0 0 0;
+}
