@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-14</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="top" class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="" class="header__logo">Flex</a>
+                <div class="header__menu menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#display" class="menu__link">Display</a>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item"><a href="#flex-display" class="menu__sub-link">Flex</a>
+                                    </li>
+                                    <li class="menu__sub-item"><a href="#flex-inline-flex-display"
+                                            class="menu__sub-link">Inline-Flex</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#flex-wrap" class="menu__link">Flex-Wrap</a>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item"><a href="#nowrap" class="menu__sub-link">Nowrap</a></li>
+                                    <li class="menu__sub-item"><a href="#wrap" class="menu__sub-link">Wrap</a></li>
+                                    <li class="menu__sub-item"><a href="#wrap-reverse"
+                                            class="menu__sub-link">Wrap-Reverse</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#flex-direction" class="menu__link">Flex-Direction</a>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item"><a href="#row" class="menu__sub-link">Row</a></li>
+                                    <li class="menu__sub-item"><a href="#row-reverse"
+                                            class="menu__sub-link">Row-Reverse</a></li>
+                                    <li class="menu__sub-item"><a href="#column" class="menu__sub-link">Column</a></li>
+                                    <li class="menu__sub-item"><a href="#column-reverse"
+                                            class="menu__sub-link">Column-Reverse</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#justify-content" class="menu__link">Justify-Content</a>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item"><a href="#flex-start"
+                                            class="menu__sub-link">Flex-Start</a></li>
+                                    <li class="menu__sub-item"><a href="#flex-end" class="menu__sub-link">Flex-End</a>
+                                    </li>
+                                    <li class="menu__sub-item"><a href="#center" class="menu__sub-link">Center</a></li>
+                                    <li class="menu__sub-item"><a href="#space-between"
+                                            class="menu__sub-link">Space-Between</a></li>
+                                    <li class="menu__sub-item"><a href="#space-around"
+                                            class="menu__sub-link">Space-Around</a></li>
+                                    <li class="menu__sub-item"><a href="#space-evenly"
+                                            class="menu__sub-link">Space-Evenly</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#align-items" class="menu__link">Align-Items</a>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item"><a href="#stretch" class="menu__sub-link">Stretch</a>
+                                    </li>
+                                    <li class="menu__sub-item"><a href="#flex-start"
+                                            class="menu__sub-link">Flex-Start</a></li>
+                                    <li class="menu__sub-item"><a href="#flex-end-align"
+                                            class="menu__sub-link">Flex-End</a></li>
+                                    <li class="menu__sub-item"><a href="#center-align" class="menu__sub-link">Center</a>
+                                    </li>
+                                    <li class="menu__sub-item"><a href="#baseline" class="menu__sub-link">Baseline</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#order" class="menu__link">Order</a></li>
+                            <li class="menu__item"><a href="#align-self" class="menu__link">Align-Self</a></li>
+                            <li class="menu__item"><a href="#flex" class="menu__link">Property-Flex</a>
+                                <ul class="menu__sub-list">
+                                    <li class="menu__sub-item"><a href="#grow" class="menu__sub-link">Flex-Grow</a></li>
+                                    <li class="menu__sub-item"><a href="#shrink" class="menu__sub-link">Flex-Shrink</a>
+                                    </li>
+                                    <li class="menu__sub-item"><a href="#flex__basis"
+                                            class="menu__sub-link">Flex-Basis</a></li>
+                                    <li class="menu__sub-item"><a href="#abbreviated-record"
+                                            class="menu__sub-link">Abbreviated Record</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div id="display" class="page__display display">
+                <div class="display__container">
+                    <div id="flex-display" class="display__flex flex-display">
+                        <h2 class="flex-display__title">display: flex;</h2>
+                        <div class="flex-display__list">
+                            <div class="flex-display__item">
+                                <p class="flex-display__text">1</p>
+                            </div>
+                            <div class="flex-display__item">
+                                <p class="flex-display__text">2</p>
+                            </div>
+                            <div class="flex-display__item">
+                                <p class="flex-display__text">3</p>
+                            </div>
+                            <div class="flex-display__item">
+                                <p class="flex-display__text">4</p>
+                            </div>
+                            <div class="flex-display__item">
+                                <p class="flex-display__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flex-inline-flex-display" class="display__inline-flex inline-flex-display">
+                        <h2 class="inline-flex-display__title">display: inline-flex;</h2>
+                        <div class="inline-flex-display__list">
+                            <div class="inline-flex-display__item">
+                                <p class="inline-flex-display__text">1</p>
+                            </div>
+                            <div class="inline-flex-display__item">
+                                <p class="inline-flex-display__text">2</p>
+                            </div>
+                            <div class="inline-flex-display__item">
+                                <p class="inline-flex-display__text">3</p>
+                            </div>
+                            <div class="inline-flex-display__item">
+                                <p class="inline-flex-display__text">4</p>
+                            </div>
+                            <div class="inline-flex-display__item">
+                                <p class="inline-flex-display__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="flex-wrap" class="page__flex-wrap flex-wrap">
+                <div class="flex-wrap__container">
+                    <div id="nowrap" class="flex-wrap__nowrap nowrap">
+                        <h2 class="nowrap__title">flex-wrap:nowrap; (default)</h2>
+                        <div class="nowrap__list">
+                            <div class="nowrap__item">
+                                <p class="nowrap__text">1</p>
+                            </div>
+                            <div class="nowrap__item">
+                                <p class="nowrap__text">2</p>
+                            </div>
+                            <div class="nowrap__item">
+                                <p class="nowrap__text">3</p>
+                            </div>
+                            <div class="nowrap__item">
+                                <p class="nowrap__text">4</p>
+                            </div>
+                            <div class="nowrap__item">
+                                <p class="nowrap__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="wrap" class="flex-wrap__wrap wrap">
+                        <h2 class="wrap__title">flex-wrap:wrap;</h2>
+                        <div class="wrap__list">
+                            <div class="wrap__item">
+                                <p class="wrap__text">1</p>
+                            </div>
+                            <div class="wrap__item">
+                                <p class="wrap__text">2</p>
+                            </div>
+                            <div class="wrap__item">
+                                <p class="wrap__text">3</p>
+                            </div>
+                            <div class="wrap__item">
+                                <p class="wrap__text">4</p>
+                            </div>
+                            <div class="wrap__item">
+                                <p class="wrap__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="wrap-reverse" class="flex-wrap__wrap-reverse wrap-reverse">
+                        <h2 class="wrap-reverse__title">flex-wrap: wrap-reverse;</h2>
+                        <div class="wrap-reverse__list">
+                            <div class="wrap-reverse__item">
+                                <p class="wrap-reverse__text">1</p>
+                            </div>
+                            <div class="wrap-reverse__item">
+                                <p class="wrap-reverse__text">2</p>
+                            </div>
+                            <div class="wrap-reverse__item">
+                                <p class="wrap-reverse__text">3</p>
+                            </div>
+                            <div class="wrap-reverse__item">
+                                <p class="wrap-reverse__text">4</p>
+                            </div>
+                            <div class="wrap-reverse__item">
+                                <p class="wrap-reverse__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="flex-direction" class="page__flex-direction flex-direction">
+                <div class="flex-direction__container">
+                    <div id="row" class="flex-direction__row row">
+                        <h2 class="row__title">flex-direction:row; (default)</h2>
+                        <div class="row__list">
+                            <div class="row__item">
+                                <p class="row__text">1</p>
+                            </div>
+                            <div class="row__item">
+                                <p class="row__text">2</p>
+                            </div>
+                            <div class="row__item">
+                                <p class="row__text">3</p>
+                            </div>
+                            <div class="row__item">
+                                <p class="row__text">4</p>
+                            </div>
+                            <div class="row__item">
+                                <p class="row__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="row-reverse" class="flex-direction__row-reverse row-reverse">
+                        <h2 class="row-reverse__title">flex-direction:row-reverse;</h2>
+                        <div class="row-reverse__list">
+                            <div class="row-reverse__item">
+                                <p class="row-reverse__text">1</p>
+                            </div>
+                            <div class="row-reverse__item">
+                                <p class="row-reverse__text">2</p>
+                            </div>
+                            <div class="row-reverse__item">
+                                <p class="row-reverse__text">3</p>
+                            </div>
+                            <div class="row-reverse__item">
+                                <p class="row-reverse__text">4</p>
+                            </div>
+                            <div class="row-reverse__item">
+                                <p class="row-reverse__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="column" class="flex-direction__column column">
+                        <h2 class="column__title">flex-direction:column;</h2>
+                        <div class="column__list">
+                            <div class="column__item">
+                                <p class="column__text">1</p>
+                            </div>
+                            <div class="column__item">
+                                <p class="column__text">2</p>
+                            </div>
+                            <div class="column__item">
+                                <p class="column__text">3</p>
+                            </div>
+                            <div class="column__item">
+                                <p class="column__text">4</p>
+                            </div>
+                            <div class="column__item">
+                                <p class="column__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="column-reverse" class="flex-direction__column-reverse column-reverse">
+                        <h2 class="column-reverse__title">flex-direction:column-reverse;</h2>
+                        <div class="column-reverse__list">
+                            <div class="column-reverse__item">
+                                <p class="column-reverse__text">1</p>
+                            </div>
+                            <div class="column-reverse__item">
+                                <p class="column-reverse__text">2</p>
+                            </div>
+                            <div class="column-reverse__item">
+                                <p class="column-reverse__text">3</p>
+                            </div>
+                            <div class="column-reverse__item">
+                                <p class="column-reverse__text">4</p>
+                            </div>
+                            <div class="column-reverse__item">
+                                <p class="column-reverse__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="justify-content" class="page__justify-content justify-content">
+                <div class="justify-content__container">
+                    <div id="flex-start" class="justify-content__flex-start flex-start">
+                        <div class="">
+                            <h2 class="flex-start__title">justify-content:flex-start; (default)</h2>
+                            <div class="flex-start__list">
+                                <div class="flex-start__item">
+                                    <p class="flex-start__text">1</p>
+                                </div>
+                                <div class="flex-start__item">
+                                    <p class="flex-start__text">2</p>
+                                </div>
+                                <div class="flex-start__item">
+                                    <p class="flex-start__text">3</p>
+                                </div>
+                                <div class="flex-start__item">
+                                    <p class="flex-start__text">4</p>
+                                </div>
+                                <div class="flex-start__item">
+                                    <p class="flex-start__text">5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flex-end" class="justify-content__flex-end flex-end">
+                        <h2 class="flex-end__title">justify-content:flex-end;</h2>
+                        <div class="flex-end__list">
+                            <div class="flex-end__item">
+                                <p class="flex-end__text">1</p>
+                            </div>
+                            <div class="flex-end__item">
+                                <p class="flex-end__text">2</p>
+                            </div>
+                            <div class="flex-end__item">
+                                <p class="flex-end__text">3</p>
+                            </div>
+                            <div class="flex-end__item">
+                                <p class="flex-end__text">4</p>
+                            </div>
+                            <div class="flex-end__item">
+                                <p class="flex-end__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="center" class="justify-content__center center">
+                        <h2 class="center__title">justify-content:center;</h2>
+                        <div class="center__list">
+                            <div class="center__item">
+                                <p class="center__text">1</p>
+                            </div>
+                            <div class="center__item">
+                                <p class="center__text">2</p>
+                            </div>
+                            <div class="center__item">
+                                <p class="center__text">3</p>
+                            </div>
+                            <div class="center__item">
+                                <p class="center__text">4</p>
+                            </div>
+                            <div class="center__item">
+                                <p class="center__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="space-between" class="justify-content__space-between space-between">
+                        <h2 class="space-between__title">justify-content:space-between;</h2>
+                        <div class="space-between__list">
+                            <div class="space-between__item">
+                                <p class="space-between__text">1</p>
+                            </div>
+                            <div class="space-between__item">
+                                <p class="space-between__text">2</p>
+                            </div>
+                            <div class="space-between__item">
+                                <p class="space-between__text">3</p>
+                            </div>
+                            <div class="space-between__item">
+                                <p class="space-between__text">4</p>
+                            </div>
+                            <div class="space-between__item">
+                                <p class="space-between__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="space-around" class="justify-content__space-around space-around">
+                        <h2 class="space-around__title">justify-content:space-around;</h2>
+                        <div class="space-around__list">
+                            <div class="space-around__item">
+                                <p class="space-around__text">1</p>
+                            </div>
+                            <div class="space-around__item">
+                                <p class="space-around__text">2</p>
+                            </div>
+                            <div class="space-around__item">
+                                <p class="space-around__text">3</p>
+                            </div>
+                            <div class="space-around__item">
+                                <p class="space-around__text">4</p>
+                            </div>
+                            <div class="space-around__item">
+                                <p class="space-around__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="space-evenly" class="justify-content__space-evenly space-evenly">
+                        <h2 class="space-evenly__title">justify-content:space-evenly;</h2>
+                        <div class="space-evenly__list">
+                            <div class="space-evenly__item">
+                                <p class="space-evenly__text">1</p>
+                            </div>
+                            <div class="space-evenly__item">
+                                <p class="space-evenly__text">2</p>
+                            </div>
+                            <div class="space-evenly__item">
+                                <p class="space-evenly__text">3</p>
+                            </div>
+                            <div class="space-evenly__item">
+                                <p class="space-evenly__text">4</p>
+                            </div>
+                            <div class="space-evenly__item">
+                                <p class="space-evenly__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="align-items" class="page__align-items align-items">
+                <div class="align-items__container">
+                    <div id="stretch" class="align-items__stretch stretch">
+                        <h2 class="stretch__title">align-items:stretch; (default)</h2>
+                        <div class="stretch__list">
+                            <div class="stretch__item">
+                                <p class="stretch__text">1</p>
+                            </div>
+                            <div class="stretch__item">
+                                <p class="stretch__text">2</p>
+                            </div>
+                            <div class="stretch__item">
+                                <p class="stretch__text">3</p>
+                            </div>
+                            <div class="stretch__item">
+                                <p class="stretch__text">4</p>
+                            </div>
+                            <div class="stretch__item">
+                                <p class="stretch__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flex-start" class="align-items__flex-start flex-start-align">
+                        <h2 class="flex-start-align__title">align-items:flex-start;</h2>
+                        <div class="flex-start-align__list">
+                            <div class="flex-start-align__item">
+                                <p class="flex-start-align__text">1</p>
+                            </div>
+                            <div class="flex-start-align__item">
+                                <p class="flex-start-align__text">2</p>
+                            </div>
+                            <div class="flex-start-align__item">
+                                <p class="flex-start-align__text">3</p>
+                            </div>
+                            <div class="flex-start-align__item">
+                                <p class="flex-start-align__text">4</p>
+                            </div>
+                            <div class="flex-start-align__item">
+                                <p class="flex-start-align__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flex-end-align" class="align-items__flex-end flex-end-align">
+                        <h2 class="flex-end-align__title">align-items:flex-end;</h2>
+                        <div class="flex-end-align__list">
+                            <div class="flex-end-align__item">
+                                <p class="flex-end-align__text">1</p>
+                            </div>
+                            <div class="flex-end-align__item">
+                                <p class="flex-end-align__text">2</p>
+                            </div>
+                            <div class="flex-end-align__item">
+                                <p class="flex-end-align__text">3</p>
+                            </div>
+                            <div class="flex-end-align__item">
+                                <p class="flex-end-align__text">4</p>
+                            </div>
+                            <div class="flex-end-align__item">
+                                <p class="flex-end-align__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="center-align" class="align-items__center center-align">
+                        <h2 class="center-align__title">align-items:center;</h2>
+                        <div class="center-align__list">
+                            <div class="center-align__item">
+                                <p class="center-align__text">1</p>
+                            </div>
+                            <div class="center-align__item">
+                                <p class="center-align__text">2</p>
+                            </div>
+                            <div class="center-align__item">
+                                <p class="center-align__text">3</p>
+                            </div>
+                            <div class="center-align__item">
+                                <p class="center-align__text">4</p>
+                            </div>
+                            <div class="center-align__item">
+                                <p class="center-align__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="baseline" class="align-items__baseline baseline">
+                        <h2 class="baseline__title">align-items:baseline;</h2>
+                        <div class="baseline__list">
+                            <div class="baseline__item">
+                                <p class="baseline__text">1</p>
+                            </div>
+                            <div class="baseline__item">
+                                <p class="baseline__text">2</p>
+                            </div>
+                            <div class="baseline__item">
+                                <p class="baseline__text">3</p>
+                            </div>
+                            <div class="baseline__item">
+                                <p class="baseline__text">4</p>
+                            </div>
+                            <div class="baseline__item">
+                                <p class="baseline__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="order" class="page__order order">
+                <div id="order" class="order__container">
+                    <h2 class="order__title">order:3;</h2>
+                    <div class="order__list">
+                        <div class="order__item">
+                            <p class="order__text">1</p>
+                        </div>
+                        <div class="order__item">
+                            <p class="order__text">2</p>
+                        </div>
+                        <div class="order__item">
+                            <p class="order__text">3</p>
+                        </div>
+                        <div class="order__item">
+                            <p class="order__text">4</p>
+                        </div>
+                        <div class="order__item">
+                            <p class="order__text">5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="align-self" class="page__align-self align-self">
+                <div class="align-self__container">
+                    <h2 class="align-self__title">align-self:auto(default),flex-start,flex-end,center;</h2>
+                    <div class="align-self__list">
+                        <div class="align-self__item">
+                            <p class="align-self__text">1</p>
+                        </div>
+                        <div class="align-self__item">
+                            <p class="align-self__text">2</p>
+                        </div>
+                        <div class="align-self__item">
+                            <p class="align-self__text">3</p>
+                        </div>
+                        <div class="align-self__item">
+                            <p class="align-self__text">4</p>
+                        </div>
+                        <div class="align-self__item">
+                            <p class="align-self__text">5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="flex" class="page__flex flex">
+                <div class="flex__container">
+                    <div id="grow" class="flex__grow grow">
+                        <h2 class="grow__title">flex-grow:1;</h2>
+                        <div class="grow__list">
+                            <div class="grow__item">
+                                <p class="grow__text">1</p>
+                            </div>
+                            <div class="grow__item">
+                                <p class="grow__text">2</p>
+                            </div>
+                            <div class="grow__item">
+                                <p class="grow__text">3</p>
+                            </div>
+                            <div class="grow__item">
+                                <p class="grow__text">4</p>
+                            </div>
+                            <div class="grow__item">
+                                <p class="grow__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="shrink" class="flex__shrink shrink">
+                        <h2 class="shrink__title">flex-shrink:1;</h2>
+                        <div class="shrink__list">
+                            <div class="shrink__item">
+                                <p class="shrink__text">1</p>
+                            </div>
+                            <div class="shrink__item">
+                                <p class="shrink__text">2</p>
+                            </div>
+                            <div class="shrink__item">
+                                <p class="shrink__text">3</p>
+                            </div>
+                            <div class="shrink__item">
+                                <p class="shrink__text">4</p>
+                            </div>
+                            <div class="shrink__item">
+                                <p class="shrink__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="flex__basis" class="flex__basis">
+                        <h2 class="basis__title">flex-basis:33.333%;</h2>
+                        <div class="basis__list">
+                            <div class="basis__item">
+                                <p class="basis__text">1</p>
+                            </div>
+                            <div class="basis__item">
+                                <p class="basis__text">2</p>
+                            </div>
+                            <div class="basis__item">
+                                <p class="basis__text">3</p>
+                            </div>
+                            <div class="basis__item">
+                                <p class="basis__text">4</p>
+                            </div>
+                            <div class="basis__item">
+                                <p class="basis__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="abbreviated-record" class="flex__abbreviated-record abbreviated-record">
+                        <h2 class="abbreviated-record__title">flex: 1 1 25%;</h2>
+                        <div class="abbreviated-record__list">
+                            <div class="abbreviated-record__item">
+                                <p class="abbreviated-record__text">1</p>
+                            </div>
+                            <div class="abbreviated-record__item">
+                                <p class="abbreviated-record__text">2</p>
+                            </div>
+                            <div class="abbreviated-record__item">
+                                <p class="abbreviated-record__text">3</p>
+                            </div>
+                            <div class="abbreviated-record__item">
+                                <p class="abbreviated-record__text">4</p>
+                            </div>
+                            <div class="abbreviated-record__item">
+                                <p class="abbreviated-record__text">5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <a href="#top" class="footer__link">upstairs ^</a>
+            </div>
+    </div>
+    </footer>
+    </div>
+</body>
+
+</html>
