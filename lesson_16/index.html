@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_16</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="page">
+            <section class="page__contacts contacts">
+                <div class="contacts__container">
+                    <div class="contacts__image">
+                        <img src="img/illustration.svg" alt="illustration">
+                    </div>
+                    <div class="contacts__body body-contacts">
+                        <div class="body-contacts__text-block">
+                            <h2 class="body-contacts__subtitle">Any questions?</h2>
+                            <h1 class="body-contacts__title">Drop us a line</h1>
+                        </div>
+                        <form action="#" class="body-contacts__form form-contacts">
+                            <div class="form-contacts__line">
+                                <label class="form-contacts__label" for="contacts-first-name">First
+                                    Name*</label>
+                                <input class="form-contacts__input" type="text" id="contacts-first-name"
+                                    placeholder="Your first name" name="first-name" required>
+                            </div>
+                            <div class="form-contacts__line">
+                                <label class="form-contacts__label" for="contacts-last-name">Last
+                                    Name*</label>
+                                <input class="form-contacts__input" type="text" id="contacts-last-name"
+                                    placeholder="Your last name" name="last-name" required>
+                            </div>
+                            <div class="form-contacts__line">
+                                <label class="form-contacts__label" for="contacts-email">Email*</label>
+                                <input class="form-contacts__input" type="email" id="contacts-email" autocomplete="off"
+                                    placeholder="Your working email" name="mail" required>
+                            </div>
+                            <div class="form-contacts__line">
+                                <label class="form-contacts__label" for="contacts-phone">Phone</label>
+                                <input class="form-contacts__input" type="tel" id="contacts-phone" autocomplete="off"
+                                    placeholder="Your phone number" name="phone">
+                            </div>
+                            <div class="form-contacts__line  form-contacts__line--textarea">
+                                <label class="form-contacts__label" for="contacts-message">Message*</label>
+                                <textarea class="form-contacts__input form-contacts__input--textarea"
+                                    placeholder="Your message" name="message" id="contacts-message" required></textarea>
+                            </div>
+                            <div class="form-contacts__line form-contacts__line--radio">
+                                <h2 class="form-contacts__title">Сonfirmation that you are 18 years old</h2>
+                                <input checked class="form-contacts__input form__input--radio" id="age-01" required
+                                    autocomplete="off" value="yes" name="age" type="radio">
+                                <label class="form__label form__label--radio" for="age-01">Yes</label>
+                                <input checked class="form-contacts__input form__input--radio" id="age-02" required
+                                    autocomplete="off" value="no" name="age" type="radio">
+                                <label class="form__label form__label--radio" for="age-02">No</label>
+                            </div>
+                            <div class="form-contacts__line form-contacts__line--checkbox">
+                                <input class="form-contacts__input form-contacts__input--checkbox" type="checkbox"
+                                    id="checkbox">
+                                <label for="checkbox" class="form-contacts__label form-contacts__label--checkbox">I
+                                    agree to
+                                    receive communications from Createx Online School </label>
+                            </div>
+                            <div class="form-contacts__line">
+                                <button class="form-contacts__button" type="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
