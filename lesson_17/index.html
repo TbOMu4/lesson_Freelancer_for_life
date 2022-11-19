@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travellian</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="#" class="header__logo">
+                    <img src="img/header/logo.svg" alt="logo">
+                </a>
+                <div class="header__menu menu">
+                    <button type="button" class="menu__icon icon-menu"><span></span></button>
+                    <div class="menu__block">
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="" class="menu__link">Home</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Explore</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Travel</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Pricing</a></li>
+                            </ul>
+                        </nav>
+                        <!-- <div class="header__btn">
+                            <a href="#" class="header__login button">Login</a>
+                            <a href="#" class="header__signup button">Sign up</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="header__btn">
+                    <a href="#" class="header__login button">Login</a>
+                    <a href="#" class="header__signup button">Sign up</a>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__main main">
+                <div class="main__container">
+                    <div class="main__text-block">
+                        <h1 class="main__title">Start your unforgettable
+                            journey with us.</h1>
+                        <p class="main__subtitle">The best travel for your jouney begins now</p>
+                    </div>
+
+                    <form action="#" class="main__form">
+                        <!-- <div class="main__container"> -->
+                        <div class="main__line">
+                            <label class="main__label" for="destination">Destination</label>
+                            <input class="main__input" type="text" id="destination" name="destination" required>
+                        </div>
+                        <div class="main__line main__line--list">
+                            <label class="main__label" for="person">Person</label>
+                            <select class="main__input main__input--list" name="list">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                            </select>
+                            <!-- <label class="main__label" for="person">Person</label>
+                            <input class="main__input" type="text" id="person" placeholder="Your first name"
+                                name="person" required> -->
+                        </div>
+                        <div class="main__line">
+                            <label class="main__label" for="check-in">Check in</label>
+                            <input class="main__input" type="date" id="check-in" name="check-in" required>
+                        </div>
+                        <div class="main__line">
+                            <label class="main__label" for="check-out">Check out</label>
+                            <input class="main__input" type="date" id="check-out" name="check-out" required>
+                        </div>
+                        <div class="main__line--button">
+                            <button class="main__button" type="submit">Book Now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="main__slider slider-main swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="slider-main__wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="slider-main__slide swiper-slide">
+                            <div class="slider-main__image">
+                                <picture>
+                                    <source src="img/main/slider/background.webp" type="image/webp">
+                                    <img src="img/main/slider/background.jpg" alt="background">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="slider-main__slide swiper-slide ">
+                            <div class="slider-main__image">
+                                <picture>
+                                    <source src="img/main/slider/background.webp" type="image/webp">
+                                    <img src="img/main/slider/background.jpg" alt="background">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="slider-main__slide swiper-slide">
+                            <div class="slider-main__image">
+                                <picture>
+                                    <source src="img/main/slider/background.webp" type="image/webp">
+                                    <img src="img/main/slider/background.jpg" alt="background">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="slider-main__slide swiper-slide">
+                            <div class="slider-main__image">
+                                <picture>
+                                    <source src="img/main/slider/background.webp" type="image/webp">
+                                    <img src="img/main/slider/background.jpg" alt="background">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="slider-main__slide swiper-slide">
+                            <div class="slider-main__image">
+                                <picture>
+                                    <source src="img/main/slider/background.webp" type="image/webp">
+                                    <img src="img/main/slider/background.jpg" alt="background">
+                                </picture>
+                            </div>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+            <section class="page__popular popular">
+                <div class="popular__container">
+                    <div class="popular__text-block">
+                        <h2 class="popular__title title">Popular Destinations</h2>
+                        <p class="popular__subtitle subtitle">Most popular destinations around the world, from
+                            historical places to natural wonders.</p>
+                    </div>
+
+
+                    <div class="popular__swiper swiper-popular swiper">
+
+                        <div class="swiper-popular__wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-popular__slide slide-popular swiper-slide">
+                                <div class="slide-popular__text-block">
+                                    <h3 class="slide-popular__title">Monument of Berlin</h3>
+                                    <div class="slide-popular__text">
+                                        <span class="slide-popular__city">Berlin,</span>
+                                        <span class="slide-popular__country">Germany</span></div>
+                                </div>
+                                <div class="swiper-popular__image">
+                                    <picture>
+                                        <!-- <source srcset="img/popular/berlin_germany.webp" type="image/webp"
+                                            media="(min-width:1330px)">
+                                        <source srcset="img/popular/berlin_germany.webp" type="image/webp"
+                                            media="(min-width:992px)">
+                                        <source srcset="img/popular/berlin_germany_288_320.webp" type="image/webp"
+                                            media="(max-width:992px)"> -->
+                                        <source src="img/popular/berlin_germany.webp" type="image/webp">
+                                        <img src="img/popular/berlin_germany.jpg" alt="berlin">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-popular__slide slide-popular swiper-slide">
+                                <div class="slide-popular__text-block">
+                                    <h3 class="slide-popular__title">Millennium Bridge</h3>
+                                    <div class="slide-popular__text">
+                                        <span class="slide-popular__city">London,</span>
+                                        <span class="slide-popular__country">United Kingdom</span></div>
+                                </div>
+                                <div class="swiper-popular__image">
+                                    <picture>
+                                        <source src=" img/popular/london_united_kingdom.webp" type="image/webp">
+                                        <img src="img/popular/london_united_kingdom.jpg" alt="background">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-popular__slide slide-popular swiper-slide">
+                                <div class="slide-popular__text-block">
+                                    <h3 class="slide-popular__title">Rialto Bridge</h3>
+                                    <div class="slide-popular__text">
+                                        <span class="slide-popular__city">Venice,</span>
+                                        <span class="slide-popular__country">Italy</span></div>
+                                </div>
+                                <div class="swiper-popular__image">
+                                    <picture>
+                                        <source src=" img/popular/venice_italy.webp" type="image/webp">
+                                        <img src="img/popular/venice_italy.jpg" alt="background">
+                                    </picture>
+                                </div>
+                            </div>
+
+                            <div class="swiper-popular__slide slide-popular swiper-slide">
+                                <div class="slide-popular__text-block">
+                                    <h3 class="slide-popular__title">Sea of Orange Tiles</h3>
+                                    <div class="slide-popular__text">
+                                        <span class="slide-popular__city">Lisbon,</span>
+                                        <span class="slide-popular__country">Portugal</span></div>
+                                </div>
+                                <div class="swiper-popular__image">
+                                    <picture>
+                                        <source src=" img/popular/lisbon_portugal.webp" type="image/webp">
+                                        <img src="img/popular/lisbon_portugal.jpg" alt="background">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-popular__slide slide-popular swiper-slide">
+                                <div class="slide-popular__text-block">
+                                    <h3 class="slide-popular__title">Monument of Berlin</h3>
+                                    <div class="slide-popular__text">
+                                        <span class="slide-popular__city">Berlin,</span>
+                                        <span class="slide-popular__country">Germany</span></div>
+                                </div>
+                                <div class="swiper-popular__image">
+                                    <picture>
+                                        <source src=" img/popular/berlin_germany.webp" type="image/webp">
+                                        <img src="img/popular/berlin_germany.jpg" alt="background">
+                                    </picture>
+                                </div>
+                            </div>
+                            ...
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="swiper-popular__button-prev swiper-button-prev"></div>
+                    <div class="swiper-popular__button-next swiper-button-next"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

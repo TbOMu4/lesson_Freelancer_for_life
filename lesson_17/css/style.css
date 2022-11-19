@@ -1,0 +1,53 @@
+@import url(reset.css);
+@import url(_common.css);
+@import url(_header.css);
+@import url(_swiper.css);
+@import url(_main.css);
+@import url(_popular.css);
+
+/* =============================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+/* font-family: 'Mulish', sans-serif; */
+
+/* =============================================================================== */
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #172432;
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+.wraper {
+    overflow: hidden;
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 1586px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main {
+    position: relative;
+    margin-bottom: 128px;
+}
+
+/* =============================================================================== */
