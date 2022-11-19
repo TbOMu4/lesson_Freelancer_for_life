@@ -457,7 +457,7 @@ body._lock {
     }
 }
 
-@media (min-width: 1439.98) {
+@media (min-width: 1439.98px) {
     .main__form {
         max-width: 1290px;
     }
